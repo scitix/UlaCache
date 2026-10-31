@@ -38,3 +38,7 @@ scripts/generated/
 *.safetensors
 *.png
 *.pdf
+
+# Published paper figures used by the README.
+!/docs/assets/kv-capacity.png
+!/docs/assets/throughput-scaling.png
