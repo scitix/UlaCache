@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "adapter": "native_dpa",
+  "capacity": {
+    "device_token_capacity_per_owner": 65536,
+    "host_token_capacity_per_owner": 196608
+  },
+  "options": {
+    "device_cache_budget_bytes": 1000000000
+  }
+}

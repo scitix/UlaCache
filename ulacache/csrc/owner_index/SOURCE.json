@@ -1,0 +1,27 @@
+{
+  "license": "Apache-2.0",
+  "upstream_repository": "https://github.com/sgl-project/sglang",
+  "upstream_base": "baa9befa381511cd4d56f83980951e5a45fffc6d",
+  "scope": "Original native encoders with accepted owner striping and request-page mapping; kernel bodies retained verbatim",
+  "files": [
+    {
+      "source": "python/sglang/kernels/jit/csrc/deepseek_v32/indexer_k.cuh",
+      "packaged": "indexer_k.cuh",
+      "sha256": "d4f7b25ba720eeec6dc7f133c1f79ec724d2910da9ab8e5e537c824dc90c358e"
+    },
+    {
+      "source": "python/sglang/kernels/jit/csrc/dsa/fused_store_index_cache.cuh",
+      "packaged": "fused_store_index_cache.cuh",
+      "sha256": "4fe9751fdf74e2bd0d2423cad078728c006b974ed0a7a3b54d1bda09be013d36"
+    }
+  ],
+  "include_dependencies": [
+    {
+      "upstream_commit": "baa9befa381511cd4d56f83980951e5a45fffc6d",
+      "source": "python/sglang/kernels/jit/include/sgl_kernel/deepseek_v4/fp8_utils.cuh",
+      "packaged": "csrc/include/sgl_kernel/deepseek_v4/fp8_utils.cuh",
+      "sha256": "6b686494e4ee7ac6f12f972e1033837ff020d1629e833e06f57f304ed0c5f022",
+      "transform": "Verbatim upstream; closes standalone include graph"
+    }
+  ]
+}

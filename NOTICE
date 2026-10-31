@@ -1,0 +1,15 @@
+UlaCache is distributed under Apache-2.0.
+
+The cache and SGLang adapter sources derive in part from FlowKV/SGLang.
+The single framework patch targets official SGLang v0.5.22, commit
+baa9befa381511cd4d56f83980951e5a45fffc6d (Apache-2.0).
+
+Native sources under ulacache/csrc retain their original copyright notices.
+The FlashAG headers provide the Index communication implementation used by UlaCache;
+its provenance is recorded in ulacache/csrc/flashag/b300/PROVENANCE.json.
+
+The scheduler ablation includes adapted SGLang HiSparse metadata kernels,
+identified separately under ulacache/csrc/kvcacheio/.
+
+Third-party CUDA ABI names and historical dataset labels retain their original
+spelling. Relocating a native include changes its path, not its algorithm.

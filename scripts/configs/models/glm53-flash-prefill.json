@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "adapter": "glm_flash",
+  "capacity": {
+    "device_token_capacity_per_owner": 4096,
+    "host_token_capacity_per_owner": 32768
+  },
+  "options": {
+    "maximum_write_record_count": 1024,
+    "maximum_padded_query_count": 8,
+    "maximum_prefill_record_count": 4096,
+    "index_score_transport": "nccl",
+    "prefill_buffer_records": 1048576,
+    "prefill_query_chunk": 256,
+    "prefill_buffer_prefetch": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "selected": {
+    "pin_blocks": 512,
+    "pin_threads": 256,
+    "victim_blocks": 128,
+    "assignment_blocks": 128,
+    "assignment_threads": 256,
+    "small_query_parallel": false
+  },
+  "scope": "Posthoc pin-only launch candidate. Preserve all original default launches except the pin CTA cap. The pin cap512was selected on original training frames; restore victim/assignment/small-query defaults to avoid matched-state regressions."
+}

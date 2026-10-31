@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "adapter": "native_tp",
+  "options": {
+    "prefill_window_rows": 512
+  }
+}

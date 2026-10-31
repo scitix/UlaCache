@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "adapter": "native_tp",
+  "options": {
+    "prefill_window_rows": 65536,
+    "low_query_pull_blocks": 16,
+    "reuse_prefill_metadata": true
+  }
+}

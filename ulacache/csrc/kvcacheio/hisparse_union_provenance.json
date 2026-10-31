@@ -1,0 +1,19 @@
+{
+  "source": "src/ulacache/vendor/csrc/kvcacheio/hisparse.cuh",
+  "source_sha256": "18fa5d6f7afe24fb908c23ffabc77ae655a88f2344a8ebc1c5c9dca163554539",
+  "native_body_lines": [
+    483,
+    708
+  ],
+  "native_body_sha256": "2a0d36b9efa04ae5bf110301fc56fb8bd26b682a6faca87c75cc63bd357a80a6",
+  "adapted_body_sha256": "c80600006578ae19b3acb242490adb1cd9835ea50e3329471ca97466543bdd14",
+  "adaptations": [
+    "Merge all query selected/current IDs and GPU sort/unique into one virtual request.",
+    "Retain the native1024-thread single-CTA resident hash scan, stable hit/evictable compaction, miss-to-oldest-slot assignment and LRU writeback.",
+    "Use int32slot and hash-position fields, global scratch, and a runtime unique count to fit shared large pools.",
+    "Publish State9/Work8 exclusive-cold transport plans; defer canonical tag updates to the common commit. Protect every current token and encode writer transports.",
+    "Separate payload transfer and common output remap; payload is excluded from timing."
+  ],
+  "not_an_unmodified_native_kernel": true,
+  "native_oracle": "The unchanged original load_cache_to_device_buffer_kernel runs on bounded fixtures to compare exact victim slots and complete LRU order."
+}

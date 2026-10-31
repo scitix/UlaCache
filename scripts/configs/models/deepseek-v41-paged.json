@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "adapter": "paged",
+  "capacity": {
+    "device_token_capacity_per_owner": 65536,
+    "host_token_capacity_per_owner": 196608
+  },
+  "options": {
+    "maximum_write_record_count": 2048,
+    "maximum_padded_query_count": 8,
+    "maximum_selected_records": 512
+  }
+}

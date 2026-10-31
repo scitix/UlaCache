@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "framework_release": "v0.5.22",
+  "adapter": "native_tp",
+  "options": {
+    "native_kv_format": "scaled656",
+    "prefetch": {"enabled": true, "completion": "layer"},
+    "prefill_window_rows": 65536
+  }
+}

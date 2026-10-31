@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "framework_release": "v0.5.22",
+  "adapter": "native_dpa",
+  "capacity": {
+    "device_token_capacity_per_owner": 2175808,
+    "host_token_capacity_per_owner": 3752320
+  },
+  "options": {
+    "maximum_write_record_count": 2048,
+    "maximum_running_requests": 128,
+    "device_cache_budget_bytes": 138106209124,
+    "host_cache_budget_bytes": 192000000000,
+    "exchange_blocks": 64,
+    "exchange_threads": 256,
+    "local_current_publication": true
+  }
+}

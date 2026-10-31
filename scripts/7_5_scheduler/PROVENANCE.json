@@ -1,0 +1,16 @@
+{
+  "source": "Prior matched-state Figure11 harness",
+  "source_revision": "2026-10-21",
+  "current_library": "ulacache",
+  "scope": "Reuse validated metadata planners with fresh NVFP4 Graph-bound traces and independent CPU policy references. Retained timing and hit-rate values are not consumed.",
+  "native_hisparse_device_body_sha256": "18fa5d6f7afe24fb908c23ffabc77ae655a88f2344a8ebc1c5c9dca163554539",
+  "files": {
+    "_runtime/hisparse_request.py": "e43c87c9077287fc890445f3deb1b415fa43e5bfa27f2e20437b6eaf8af3663d",
+    "_runtime/hisparse_shared.py": "85dc4ddef63bd317dbd16b73729aca51f163605fec7ec029846a2be29a30d7c2",
+    "_runtime/kernels/hisparse_request_native.cuh": "d7b588ae6bf1b77ad91bd3593113819c8538e7dae7de5743d75b04998e960b7c",
+    "_runtime/kernels/hisparse_union.cuh": "0588ad439bd46a0c111031b7ad9dce1667fd050982c6feb1d18dd4c4a0e3afee"
+  },
+  "native_body_matches_official_sglang_v0522": true,
+  "official_body_lines": 368,
+  "current_trace_model": "GLM-5.3-NVFP4"
+}

@@ -1,0 +1,8 @@
+{
+  "origin": "FlashAG B300 source used by the UlaCache Index transport; original content fingerprints are recorded below",
+  "files": {
+    "common.cuh": "4e70f7c65cb15170c5b4ed2f4768be1215f9a15b5b5d51f11dee0b6d3792f84a",
+    "ag_kernels.cuh": "97f0e0bc08fa98401c84ca4191ff496b78d454fe50e310a40be8ed6f599bd1cf"
+  },
+  "changes": "GPU dynamic payload count. Zero counts send one ignored dummy pack to retain the original arrival/slot proof. Original D31 unicast wire layout, tag counters and slot geometry retained; no added cross-rank barriers. Static original template remains the default. The local support namespace uses the project name; internal document references and historical timing commentary are omitted."
+}

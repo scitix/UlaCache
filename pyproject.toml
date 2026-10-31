@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ulacache"
+version = "0.1.0"
+description = "Unified distributed GPU and CPU KV cache management"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = []
+
+[project.optional-dependencies]
+cuda = ["torch>=2.8", "triton>=3.3; platform_system == 'Linux'"]
+snapshot = ["torch>=2.8", "numpy>=1.24"]
+test = ["pytest>=8", "pyzmq>=25", "ruff==0.9.10"]
+artifact = ["numpy>=1.24", "matplotlib>=3.8", "pypdf>=5", "tokenizers>=0.21", "transformers>=4.57", "jinja2>=3.1", "aiohttp>=3.10"]
+
+[project.scripts]
+ulacache-kv-snapshot = "ulacache.tools.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ulacache", "ulacache.*"]
+
+[tool.setuptools.package-data]
+ulacache = ["csrc/**/*", "csrc/**/LICENSE", "csrc/**/NOTICE"]
+
+[tool.pytest.ini_options]
+testpaths = ["scripts/validation/tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
